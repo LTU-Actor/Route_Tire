@@ -1,0 +1,27 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      hue_h: 165.75
+      hue_l: 0.0
+      id: 0
+      name: Default
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      sat_h: 135.15
+      sat_l: 0.0
+      state: true
+      type: ''
+      val_h: 73.95
+      val_l: 0.0
+    state: []
+  hue_h: 165.75
+  hue_l: 0.0
+  sat_h: 135.15
+  sat_l: 0.0
+  val_h: 73.95
+  val_l: 0.0
+state: []

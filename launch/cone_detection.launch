@@ -1,0 +1,13 @@
+<launch>
+    <!--<include file="$(find simple_camera_publisher)/launch/camera_publisher.launch">
+        <!<arg name = "source"
+            value = "/dev/v4l/by-id/usb-KYE_Systems_Corp._USB_Camera_200901010001-video-index0" />
+    </include> -->
+ 
+    <node name="cone_detection" pkg="Route_Tire" type="cone_detection.py" output="screen" respawn="true">
+        <param name="imgtopic" type="str" value="/camera/image_raw" />      
+    </node>
+    
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_console" args="-t"/>
+    <rosparam  file = "$(find Route_Tire)/params/barrel_detector_vision.yaml"/>
+ </launch>
